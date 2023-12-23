@@ -1,10 +1,3 @@
-if (_G.FARM ~= nil) then
-	warn("already executed")
-	return 
-else 
-	_G.FARM = "eyesore"
-end
-
 local PlaceID = game.PlaceId
 local AllIDs = {}
 local foundAnything = ""
