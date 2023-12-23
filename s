@@ -1,3 +1,10 @@
+if (_G.EXC ~= nil) then
+	warn("already executed")
+	return 
+else 
+	_G.EXC = "eyesore"
+end
+
 local PlaceID = game.PlaceId
 local AllIDs = {}
 local foundAnything = ""
