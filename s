@@ -47,7 +47,7 @@ function TPReturner()
                 wait()
                 pcall(function()
                     writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
-                    wait()
+                    wait(2)
                     game:GetService("TeleportService"):TeleportToPlaceInstance(PlaceID, ID, game.Players.LocalPlayer)
                 end)
                 wait()
@@ -57,9 +57,8 @@ function TPReturner()
 end
 
 function Teleport()
-    while wait(3) do
+    while wait() do
         pcall(function()
-            wait(3)
             TPReturner()
             if foundAnything ~= "" then
                 TPReturner()
