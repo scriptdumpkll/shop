@@ -59,6 +59,7 @@ end
 function Teleport()
     while wait(3) do
         pcall(function()
+            wait(3)
             TPReturner()
             if foundAnything ~= "" then
                 TPReturner()
